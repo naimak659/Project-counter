@@ -1,0 +1,51 @@
+@font-face {
+  font-family: PixelifySans;
+  src: url(./fonts/PixelifySans-Regular.ttf);
+}
+
+.display-none {
+  display: none;
+}
+.display {
+  display: inline-block;
+}
+.counterContent {
+  position: relative;
+  width: fit-content;
+}
+.countBox {
+  position: absolute;
+  top: 28%;
+  left: 53%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.countBox h2 {
+  text-align: center;
+  font-family: 'PixelifySans';
+  color: #01c90a;
+  font-size: 32px;
+}
+.Arrows{
+  display: flex;
+  gap: 124px;
+}
+.Arrows img{
+  width: 48px;
+}
+.line{
+  width: 40px;
+  height: 5px;
+  background: #01c90a;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
