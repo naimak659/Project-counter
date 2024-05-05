@@ -10,9 +10,10 @@ let countUp = () => {
   if (num < 420) {
     num++;
     numberDisplay.innerHTML = num;
-  } else {
-    clearInterval(intervalId); // Clear interval when num reaches 420
   }
+  // else {
+  //   clearInterval(intervalId); // Clear interval when num reaches 420
+  // }
 };
 
 let countDown = () => {
@@ -26,23 +27,25 @@ let countDown = () => {
 
 // counter ++
 CounterPositive.addEventListener("click", () => {
-  CounterPositive.classList.replace("display", "display-none");
-  CounterPositiveStop.classList.replace("display-none", "display");
-  clearInterval(intervalId); // Clear any existing intervals
-  intervalId = setInterval(countUp, 1); // Assign new interval to intervalId
+  // CounterPositive.classList.replace("display", "display-none");
+  // CounterPositiveStop.classList.replace("display-none", "display");
+  countUp();
+  // clearInterval(intervalId); // Clear any existing intervals
+  // intervalId = setInterval(countUp, 1); // Assign new interval to intervalId
 });
 
-// counter Stop
-CounterPositiveStop.addEventListener("click", () => {
-  clearInterval(intervalId); // Clear the counting interval
-  CounterPositiveStop.classList.replace("display", "display-none");
-  CounterPositive.classList.replace("display-none", "display");
-});
+// // counter Stop
+// CounterPositiveStop.addEventListener("click", () => {
+//   clearInterval(intervalId); // Clear the counting interval
+//   CounterPositiveStop.classList.replace("display", "display-none");
+//   CounterPositive.classList.replace("display-none", "display");
+// });
 
 // counter --
 reset.addEventListener("click", () => {
-  clearInterval(intervalId); // Clear any existing intervals
-  intervalId = setInterval(countDown, 1); // Assign new interval to intervalId
-  CounterPositiveStop.classList.replace("display", "display-none");
-  CounterPositive.classList.replace("display-none", "display");
+  // clearInterval(intervalId); // Clear any existing intervals
+  // intervalId = setInterval(countDown, 1); // Assign new interval to intervalId
+  // CounterPositiveStop.classList.replace("display", "display-none");
+  // CounterPositive.classList.replace("display-none", "display");
+  countDown();
 });
