@@ -1,3 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+div,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #fff;
+}
+
+
 @font-face {
   font-family: PixelifySans;
   src: url(./fonts/PixeloidSans-mLxMm.ttf);
@@ -15,7 +53,7 @@
 }
 .countBox {
   position: absolute;
-  top: 28%;
+  top: 32%;
   left: 53%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -25,27 +63,33 @@
 }
 .countBox h2 {
   text-align: center;
-  font-family: 'PixelifySans';
+  font-family: "PixelifySans";
   color: #01c90a;
   font-size: 32px;
 }
-.Arrows{
-  display: flex;
-  gap: 124px;
+
+.CounterNumber {
+  position: relative;
 }
-.Arrows img{
-  width: 48px;
-}
-.line{
+.line {
   width: 40px;
   height: 5px;
   background: #01c90a;
   position: absolute;
-  bottom: 50%;
-  left: 50%;
+  bottom: -15%;
+  left: 49.3%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+}
+
+.Arrows {
+  display: flex;
+  gap: 124px;
+  padding-top: 5px;
+}
+.Arrows img {
+  width: 48px;
 }
