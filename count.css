@@ -32,9 +32,11 @@ ul {
   padding: 0;
 }
 body {
-  color: #fff;
-}
+  display: flex;
+  justify-content: center;
+  gap: 400px;
 
+}
 
 @font-face {
   font-family: PixelifySans;
